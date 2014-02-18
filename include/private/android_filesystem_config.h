@@ -231,6 +231,9 @@ static const struct fs_path_config android_files[] = {
     { 00644, AID_APP,       AID_APP,       0, "data/data/*" },
     { 00755, AID_ROOT,      AID_ROOT,      0, "system/bin/ping" },
 
+    /* unit tests... */
+    { 00755, AID_ROOT,      AID_ROOT,      0, "data/nativetest/ion-unit-tests/ion-unit-tests" },
+
     /* the following file is INTENTIONALLY set-gid and not set-uid.
      * Do not change. */
     { 02750, AID_ROOT,      AID_INET,      0, "system/bin/netcfg" },
